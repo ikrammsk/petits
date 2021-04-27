@@ -1,8 +1,9 @@
 import React from "react";
 import './App.css'
-import Circle from "./components/Circle.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Circle from "./components/Circle.jsx"
 import Winner from "./components/Winner.jsx"
+import Jetons from "./components/Jetons.jsx";
 
 
 class App extends React.Component {
@@ -122,8 +123,8 @@ class App extends React.Component {
                   <div className="flex grid-item-4">
                     {this.renderCircles(29, 36)}
                   </div>
-
-                  <div className="flex grid-item-5">
+                <div><Jetons></Jetons></div>
+                  {/* <div className="flex grid-item-5">
                     <div className="containerP1">
                       <div className="divchildP1">
                         <div >
@@ -148,7 +149,7 @@ class App extends React.Component {
                           <Circle circleColor={this.state.player2Tokens[3] ? "#c30c0c" : "black"} />
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
                     <div className="numeroDee">
                       <span className="spanP1">{this.state.numDee}</span>
@@ -172,7 +173,7 @@ class App extends React.Component {
               </div>
             </div>
           </div>
-        </div >
+        // </div >
       )
     }
   }
